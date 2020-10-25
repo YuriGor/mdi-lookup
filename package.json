@@ -1,0 +1,27 @@
+{
+  "name": "mdi-lookup",
+  "version": "1.0.0",
+  "description": "Material Design Icons meta.json simplified/shortened to use for icons lookup by name/aliases/tags ",
+  "main": "mdi-lookup.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuriGor/mdi-lookup.git"
+  },
+  "author": "YuriGor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YuriGor/mdi-lookup/issues"
+  },
+  "homepage": "https://github.com/YuriGor/mdi-lookup#readme",
+  "devDependencies": {
+    "axios": "^0.21.0",
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2"
+  }
+}

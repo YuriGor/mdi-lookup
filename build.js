@@ -1,21 +1,13 @@
-const axios = require('axios');
+const mdiMeta = require('@mdi/svg/meta');
 const fs = require('fs');
 
-const url =
-  'https://raw.githubusercontent.com/Templarian/MaterialDesign/master/meta.json';
-
 async function main() {
-  try {
-    const response = await axios.get(url);
-    fs.writeFileSync(
-      'mdi-lookup.json',
-      JSON.stringify(
-        response.data.map((m) => `${m.name} ${m.aliases.join(' ')}`.trim())
-      )
-    );
-  } catch (error) {
-    console.log(error);
-  }
+  fs.writeFileSync(
+    'mdi-lookup.json',
+    JSON.stringify(
+      mdiMeta.map((m) => `${m.name} ${m.aliases.join(' ')}`.trim())
+    )
+  );
 }
 
 main();
